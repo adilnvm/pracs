@@ -1,0 +1,68 @@
+body {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+    margin: 0;
+    border: 5px gold solid;
+}
+
+.button {
+    background-color: rgb(233, 165, 19);
+    padding: 10px 20px;
+    margin: 10px; /* Adjust margin for both vertical and horizontal spacing */
+    border: none;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgb(255, 120, 0);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row; /* Initially, display buttons in a row */
+    align-items: center; /* Center the buttons horizontally */
+    justify-content: center; /* Center the buttons vertically */
+}
+
+.reset {
+    background-color: rgb(233, 94, 0);
+    padding: 10px 20px;
+    margin: 10px; /* Adjust margin for both vertical and horizontal spacing */
+    border: none;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.reset:hover {
+    background-color: rgb(255, 120, 0);
+}
+
+#fib {
+    text-align: center;
+    font-size: xx-large;
+    color: #FFD700;
+    margin-bottom: 20px; /* Adjust margin at the bottom for smaller screens */
+}
+
+.all {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+}
+
+/* Media query for screens below 800px */
+@media (max-width: 800px) {
+    .button-container {
+        flex-direction: column; /* Change to column for smaller screens */
+    }
+}
